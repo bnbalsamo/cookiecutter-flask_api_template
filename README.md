@@ -1,4 +1,15 @@
 A cookiecutter template for a Flask RESTful API
+v0.0.1
+
+# Whats it get me?
+- [Github](https://github.com/) integration
+- [TravisCI](https://travis-ci.org/) integration
+- [Coveralls](https://coveralls.io/) integration
+- Preconfigured [bumpversion](https://github.com/peritus/bumpversion)
+- A solid code template (in my opinion)
+- [Dockerization](https://www.docker.com/)
+- A debug launch script
+- A minimal README
 
 # Quickstart
 

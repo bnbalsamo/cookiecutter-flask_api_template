@@ -7,6 +7,7 @@ def readme():
 setup(
     name = "{{ cookiecutter.slug_name }}",
     description = "{{ cookiecutter.short_description }}",
+    version = "{{ cookiecutter.version }}",
     long_description = readme(),
     packages = find_packages(
         exclude = [
