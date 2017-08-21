@@ -1,11 +1,11 @@
 {
-    "project_name": "",
-    "slug_name": "",
+    "project_name": "MyProject",
+    "slug_name": "myproject",
     "version": "0.0.1",
-    "short_description": "",
-    "author": "",
-    "email": "",
-    "github_username": "",
+    "short_description": "A project",
+    "author": "First Last",
+    "email": "you@provider.com",
+    "github_username": "githublogin",
     "license": [
         "GNU GPLv3",
         "GNU AGPLv3",

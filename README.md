@@ -1,4 +1,4 @@
-A cookiecutter template for a Flask RESTful API
+A [cookiecutter](https://github.com/audreyr/cookiecutter) template for a Flask RESTful API
 
 v0.0.1
 
