@@ -3,12 +3,12 @@ A cookiecutter template for a Flask RESTful API
 # Quickstart
 
 - Requirements For These Instructions
-    - virtualenv
-    - virtualenvwrapper
+    - [virtualenv](https://virtualenv.pypa.io/en/stable/)
+    - [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
         - Properly configured for Project Management
-    - Github account
-    - TravisCI account
-    - Coveralls account
+    - [Github](https://github.com/) account
+    - [TravisCI](https://travis-ci.org/) account
+    - [Coveralls](https://coveralls.io/) account
 - Steps
     - Create a github repo named $YOUR_PROJECT_NAME
     - Enable repository monitoring on Travis
@@ -23,4 +23,4 @@ A cookiecutter template for a Flask RESTful API
     - ```$ git commit -m "first commit"```
     - ```$ git push```
 
-Inspiration (and some code) taken from https://github.com/audreyr/cookiecutter-pypackage
+Inspiration (and some code) taken from [audreyr's pypackage template](https://github.com/audreyr/cookiecutter-pypackage)
