@@ -1,0 +1,9 @@
+language: python
+python:
+    - "3.5"
+before_script:
+    - pip install coverage && pip install python-coveralls
+install: "python setup.py install"
+script: coverage run --source {{ cookiecutter.slug_name }} tests.py && coverage report
+after_success:
+    - coveralls

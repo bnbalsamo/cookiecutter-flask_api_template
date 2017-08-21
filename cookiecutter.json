@@ -1,0 +1,19 @@
+{
+    "project_name": "",
+    "slug_name": "",
+    "version": "0.0.0",
+    "short_description": "",
+    "author": "",
+    "email": "",
+    "github_username": "",
+    "license": [
+        "GNU GPLv3",
+        "GNU AGPLv3",
+        "GNU LGPLv3", 
+        "MIT License",
+        "Apache License 2.0",
+        "Mozzilla Public License 2.0", 
+        "The Unlicense",
+        "None/Other"
+    ]
+}
