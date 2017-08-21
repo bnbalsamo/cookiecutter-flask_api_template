@@ -1,4 +1,5 @@
 A cookiecutter template for a Flask RESTful API
+
 v0.0.1
 
 # Whats it get me?
