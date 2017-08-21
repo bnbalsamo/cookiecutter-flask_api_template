@@ -9,12 +9,14 @@ setup(
     description = "{{ cookiecutter.short_description }}",
     version = "{{ cookiecutter.version }}",
     long_description = readme(),
+    author = "{{ cookiecutter.author }}",
+    author_email = "{{ cookiecutter.email }}",
     packages = find_packages(
         exclude = [
         ]
     ),
     install_requires = [
-        'flask>0',
+        'Flask',
         'flask_env',
         'flask_restful'
     ]
