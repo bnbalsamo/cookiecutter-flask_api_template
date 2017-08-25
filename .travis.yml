@@ -3,4 +3,4 @@ python:
     - "3.5"
 before_script:
     - pip install cookiecutter
-script: cookiecutter . --no-input && cd MyProject && python tests.py 
+script: cookiecutter . --no-input && cd MyProject && python setup.py install && python tests.py 
