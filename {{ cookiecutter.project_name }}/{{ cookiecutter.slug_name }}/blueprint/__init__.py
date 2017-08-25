@@ -5,6 +5,11 @@ from flask_restful import Resource, Api
 
 from .exceptions import Error
 
+__author__ = """{{ cookiecutter.author }}"""
+__email__ = """{{ cookiecutter.email }}"""
+__version__ = """{{ cookiecutter.version }}"""
+
+
 BLUEPRINT = Blueprint('{{ cookiecutter.slug_name }}', __name__)
 
 BLUEPRINT.config = {}
@@ -25,6 +30,10 @@ class Root(Resource):
     def get(self):
         return {"Status": "Not broken!"}
 
+class Version(Resource):
+    def get(self):
+        return {"version": __version__}
+
 
 @BLUEPRINT.record
 def handle_configs(setup_state):
@@ -43,3 +52,4 @@ def handle_configs(setup_state):
 
 
 API.add_resource(Root, "/")
+API.add_resource(Version, "/version")

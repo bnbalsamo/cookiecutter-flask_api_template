@@ -33,6 +33,7 @@ v0.0.1
     - ```$ git init```
     - ```$ git add *```
     - ```$ git commit -m "first commit"```
+    - ```$ git remote add origin $YOUR_REPO_ADDRESS```
     - ```$ git push```
 
 Inspiration (and some code) taken from [audreyr's pypackage template](https://github.com/audreyr/cookiecutter-pypackage)

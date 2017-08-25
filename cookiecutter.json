@@ -5,7 +5,6 @@
     "short_description": "A project",
     "author": "First Last",
     "email": "you@provider.com",
-    "github_username": "githublogin",
     "license": [
         "GNU GPLv3",
         "GNU AGPLv3",
