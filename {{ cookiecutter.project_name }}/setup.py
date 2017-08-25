@@ -16,7 +16,7 @@ setup(
         ]
     ),
     install_requires = [
-        'Flask',
+        'flask>0',
         'flask_env',
         'flask_restful'
     ]
