@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bnbalsamo/cookiecutter-flask_api_template.svg?branch=master)](https://travis-ci.org/bnbalsamo/cookiecutter-flask_api_template)
+
 A [cookiecutter](https://github.com/audreyr/cookiecutter) template for a Flask RESTful API
 
 v0.0.1
