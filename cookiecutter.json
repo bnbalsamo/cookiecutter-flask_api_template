@@ -5,6 +5,7 @@
     "short_description": "A project",
     "author": "First Last",
     "email": "you@provider.com",
+    "github_username": "githubber",
     "license": [
         "GNU GPLv3",
         "GNU AGPLv3",
