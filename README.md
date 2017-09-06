@@ -13,6 +13,13 @@ v0.0.1
 - [Dockerization](https://www.docker.com/)
 - A debug launch script
 - A minimal README
+- Packages for common development tasks
+    - pip
+    - bumpversion
+    - wheel
+    - flake8
+    - coverage
+    - pytest
 
 # Quickstart
 
@@ -37,5 +44,8 @@ v0.0.1
     - ```$ git commit -m "first commit"```
     - ```$ git remote add origin $YOUR_REPO_ADDRESS```
     - ```$ git push```
+    - ```pip install -r requirements_dev.txt```
+    - Begin developing your package!
+
 
 Inspiration (and some code) taken from [audreyr's pypackage template](https://github.com/audreyr/cookiecutter-pypackage)

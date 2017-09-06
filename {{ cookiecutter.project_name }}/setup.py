@@ -17,9 +17,15 @@ setup(
         exclude=[
         ]
     ),
+    include_package_data=True,
+    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.slug_name }}',
     install_requires=[
         'flask>0',
         'flask_env',
         'flask_restful'
-    ]
+    ],
+    tests_require=[
+        'pytest'
+    ],
+    test_suite='tests'
 )

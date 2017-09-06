@@ -4,6 +4,7 @@ python:
 before_script:
     - pip install pytest coverage python-coveralls flake8
 install: "python setup.py install"
-script: coverage run --source {{ cookiecutter.slug_name }} -m py.test && flake8 --exit-zero && coverage report
+script: coverage run --source {{ cookiecutter.slug_name }} -m py.test && flake8 --exit-zero
 after_success:
+    - coverage report
     - coveralls
