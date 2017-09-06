@@ -7,6 +7,7 @@ environ['{{ cookiecutter.slug_name|upper }}_DEFER_CONFIG'] = "True"
 
 import {{ cookiecutter.slug_name }}
 
+
 class Tests(unittest.TestCase):
     def setUp(self):
         # Do any configuration/setting of mock env vars here
