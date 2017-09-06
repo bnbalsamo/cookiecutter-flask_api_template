@@ -3,6 +3,6 @@ python:
     - "3.5"
 before_script:
     - pip install cookiecutter
-script: cookiecutter . --no-input && cd MyProject && python setup.py install && py.test && docker build . -t proj && docker run proj "python /code/tests/test_myproject.py" 
+script: cookiecutter . --no-input && cd MyProject && python setup.py install && py.test && docker build . -t proj && docker run proj python /code/tests/test_myproject.py 
 services:
     - docker
