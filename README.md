@@ -2,7 +2,7 @@
 
 A [cookiecutter](https://github.com/audreyr/cookiecutter) template for a Flask RESTful API
 
-v0.0.1
+v0.1.0
 
 # Whats it get me?
 - [Github](https://github.com/) integration
