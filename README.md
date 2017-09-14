@@ -2,7 +2,7 @@
 
 v0.1.0
 
-[![Build Status](https://travis-ci.org/bnbalsamo/cookiecutter-pypackage.svg?branch=master)](https://travis-ci.org/bnbalsamo/cookiecutter-pypackage)
+[![Build Status](https://travis-ci.org/bnbalsamo/cookiecutter-flask_api_template.svg?branch=master)](https://travis-ci.org/bnbalsamo/cookiecutter-flask_api_template)
 
 My cookiecutter template for flask APIs
 
@@ -10,6 +10,7 @@ My cookiecutter template for flask APIs
 - [Github](https://github.com/) integration
 - [TravisCI](https://travis-ci.org/) integration
 - [Coveralls](https://coveralls.io/) integration
+- [Dockerization](https://www.docker.com/)
 - A minimal README
 - A virtual environment (python >= 3.3)
 - A reasonable code template
@@ -38,7 +39,7 @@ My cookiecutter template for flask APIs
     - Create a github repo named $YOUR_PROJECT_NAME
     - Enable repository monitoring on Travis
     - Enable repository monitoring on coveralls
-    - ```$ cookiecutter https://github.com/bnbalsamo/cookiecutter-pypackage```
+    - ```$ cookiecutter https://github.com/bnbalsamo/cookiecutter-flask_api_template```
     - Fill in the prompts
     - ```$ cd $YOUR_PROJECT_NAME```
     - ```$ source .env/bin/activate```
@@ -50,6 +51,28 @@ My cookiecutter template for flask APIs
     - ```$ git remote add origin $YOUR_REPO_ADDRESS```
     - ```$ git push -u origin master```
     - Begin developing your api!
+
+# Package Layout
+- ```$slug_name.__init__``` 
+    - Defines the "app" callable and handles injecting
+        configuration via environmental variables and
+        mounting the blueprint to an application object.
+- ```$slug_name.blueprint.__init___```
+    - Defines the application blueprint, endpoints,
+        startup configuration (via the ```record``` decorated function),
+        etc. Where the majority of the logic for the application
+        resides.
+- ```$slug_name.blueprint.exceptions```
+    - Defines errors/exceptions that will be handled
+        by the blueprints errorhandler decorated function.
+
+## Why bother with a blueprint?
+
+For more information about blueprints see [here](http://flask.pocoo.org/docs/0.12/blueprints/).
+
+Formatting the API as a blueprint means that in the future anybody's application callable
+can use ```Flask.register_blueprint()``` to run your API in concert with other blueprints,
+if required.
 
 # Functionalities
 
@@ -73,4 +96,8 @@ entry provides a good breakdown of uploading a package to pypi. All of the refer
 tools should be installed by a ```pip -r requirements_dev.txt``` in your project
 virtualenv.
 
+
+
 Inspiration (and some code) taken from [audreyr's pypackage template](https://github.com/audreyr/cookiecutter-pypackage)
+
+For a more general template for any python package see [bnbalsamo/cookiecutter-pypackage](https://github.com/bnbalsamo/cookiecutter-pypackage)
