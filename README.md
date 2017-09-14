@@ -53,16 +53,16 @@ My cookiecutter template for flask APIs
     - Begin developing your api!
 
 # Package Layout
-- ```$slug_name.__init__``` 
+- ```$slug_name/__init__.py``` 
     - Defines the "app" callable and handles injecting
         configuration via environmental variables and
         mounting the blueprint to an application object.
-- ```$slug_name.blueprint.__init___```
+- ```$slug_name/blueprint/__init___.py```
     - Defines the application blueprint, endpoints,
         startup configuration (via the ```record``` decorated function),
         etc. Where the majority of the logic for the application
         resides.
-- ```$slug_name.blueprint.exceptions```
+- ```$slug_name/blueprint/exceptions.py```
     - Defines errors/exceptions that will be handled
         by the blueprints errorhandler decorated function.
 
