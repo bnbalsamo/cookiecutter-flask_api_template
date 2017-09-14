@@ -10,5 +10,7 @@ script:
     - pip install -r requirements_dev.txt
     - python setup.py install 
     - py.test 
+    - docker build . -t proj 
+    - docker run proj python /code/tests/test_myproject.py 
 services:
     - docker
