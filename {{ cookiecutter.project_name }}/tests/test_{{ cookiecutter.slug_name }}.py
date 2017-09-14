@@ -2,7 +2,7 @@ import unittest
 import json
 from os import environ
 
-# Defer configuration to the tests setUp()
+# Defer any configuration to the tests setUp()
 environ['{{ cookiecutter.slug_name|upper }}_DEFER_CONFIG'] = "True"
 
 import {{ cookiecutter.slug_name }}
@@ -10,8 +10,21 @@ import {{ cookiecutter.slug_name }}
 
 class Tests(unittest.TestCase):
     def setUp(self):
-        # Do any configuration/setting of mock env vars here
-        self.app = {{ cookiecutter.slug_name }}.app.test_client()
+        # Perform any setup that should occur
+        # before every test
+        self.app = {{ cookiecutter.slug_name}}.app.test_client()
+
+    def tearDown(self):
+        # Perform any tear down that should
+        # occur after every test
+        pass
+
+    def testPass(self):
+        self.assertEqual(True, True)
+
+    def testVersionAvailable(self):
+        x = getattr({{ cookiecutter.slug_name }}, "__version__", None)
+        self.assertTrue(x is not None)
 
     def testVersion(self):
         version_response = self.app.get("/version")
