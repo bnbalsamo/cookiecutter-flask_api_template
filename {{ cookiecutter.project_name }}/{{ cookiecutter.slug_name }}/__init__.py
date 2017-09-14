@@ -1,5 +1,5 @@
 from flask import Flask
-from .blueprint import BLUEPRINT
+from .blueprint import BLUEPRINT, __version__, __email__, __author__
 from flask_env import MetaFlaskEnv
 
 

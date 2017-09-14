@@ -1,3 +1,6 @@
+"""
+{{ cookiecutter.slug_name }}
+"""
 import logging
 
 from flask import Blueprint, jsonify
@@ -5,9 +8,9 @@ from flask_restful import Resource, Api
 
 from .exceptions import Error
 
-__author__ = """{{ cookiecutter.author }}"""
-__email__ = """{{ cookiecutter.email }}"""
-__version__ = """{{ cookiecutter.version }}"""
+__author__ = "{{ cookiecutter.author }}"
+__email__ = "{{ cookiecutter.email }}"
+__version__ = "{{ cookiecutter.version }}"
 
 
 BLUEPRINT = Blueprint('{{ cookiecutter.slug_name }}', __name__)
