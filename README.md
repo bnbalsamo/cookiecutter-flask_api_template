@@ -1,6 +1,6 @@
 # cookiecutter-flask_api_template
 
-v0.1.0
+v0.2.0
 
 [![Build Status](https://travis-ci.org/bnbalsamo/cookiecutter-flask_api_template.svg?branch=master)](https://travis-ci.org/bnbalsamo/cookiecutter-flask_api_template)
 
