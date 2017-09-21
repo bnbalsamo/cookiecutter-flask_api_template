@@ -13,18 +13,19 @@ class Tests(unittest.TestCase):
     def setUp(self):
         # Perform any setup that should occur
         # before every test
-        self.app = {{ cookiecutter.slug_name}}.app.test_client()
         # Set up TESTING and DEBUG env vars to be picked up by Flask
-        self.app.config['DEBUG'] = True
-        self.app.config['TESTING'] = True
+        {{ cookiecutter.slug_name }}.app.config['DEBUG'] = True
+        {{ cookiecutter.slug_name }}.app.config['TESTING'] = True
         # Set a random secret key for testing
-        self.app.config['SECRET_KEY'] = str(urandom(32))
+        {{ cookiecutter.slug_name }}.app.config['SECRET_KEY'] = str(urandom(32))
 
-        # Duplicate app config settings into the bp
-        self.app.blueprint.BLUEPRINT.config['DEBUG'] = True
-        self.app.blueprint.BLUEPRINT.config['TESTING'] = True
-        self.app.blueprint.BLUEPRINT.config['SECRET_KEY'] = \
-            self.app.config['SECRET_KEY']
+        # Duplicate app config settings into the bp, like the register would
+        {{ cookiecutter.slug_name }}.app.blueprint.BLUEPRINT.config['DEBUG'] = True
+        {{ cookiecutter.slug_name }}.app.blueprint.BLUEPRINT.app.blueprint.BLUEPRINT.config['TESTING'] = True
+        {{ cookiecutter.slug_name }}.app.blueprint.BLUEPRINT.app.blueprint.BLUEPRINT.config['SECRET_KEY'] = \
+            {{ cookiecutter.slug_name }}.app.config['SECRET_KEY']
+
+        self.app = {{ cookiecutter.slug_name}}.app.test_client()
 
 
     def tearDown(self):
