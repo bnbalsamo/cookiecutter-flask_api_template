@@ -3,10 +3,9 @@
 """
 import logging
 
-from flask import Blueprint, jsonify
+from flask import Blueprint
 from flask_restful import Resource, Api
 
-from .exceptions import Error
 
 __author__ = "{{ cookiecutter.author }}"
 __email__ = "{{ cookiecutter.email }}"
@@ -20,13 +19,6 @@ BLUEPRINT.config = {}
 API = Api(BLUEPRINT)
 
 log = logging.getLogger(__name__)
-
-
-@BLUEPRINT.errorhandler(Error)
-def handle_errors(error):
-    response = jsonify(error.to_dict())
-    response.status_code = error.status_code
-    return response
 
 
 class Root(Resource):
