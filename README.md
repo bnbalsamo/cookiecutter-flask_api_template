@@ -27,6 +27,7 @@ My cookiecutter template for flask APIs
     - [pytest](https://docs.pytest.org/en/latest/)
     - [twine](https://pypi.python.org/pypi/twine)
     - [check-manifest](https://github.com/mgedmin/check-manifest)
+- A very minimal wsgi.ini script, if you prefer that route
 
 # Quickstart
 
