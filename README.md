@@ -88,6 +88,18 @@ Any of the following can be run off the bat from the project root
     * the ```-c``` option will create one, if it doesn't exist
     * the ```-u``` option will update an existing file, or create one
 
+# Running Your Application Server
+There are a multitude of ways to run a WSGI application in both development and production
+environments.
+
+See [here](flask.pocoo.org/docs/latest/deploying/) for the Flask documentation on the topic.
+
+This cookiecutter is unopinionated, it doesn't include any of the standalone python wsgi
+containers, however both a ```$yourapplication.wsgi``` file and a ```wsgi.ini``` are included
+into the repositories root in order to facilitate the use of different deployments if required.
+
+By default, the Dockerization is based on [bnbalsamo/flask_stack](https://hub.docker.com/r/bnbalsamo/flask_stack/) ([github](https://github.com/bnbalsamo/docker-flask_stack)), which utilizes a gunicorn server bound to a filesystem socket being served via an nginx proxy.
+
 ## Uploading to pypi
 
 I'll not hazard a short answer here, as there are too many options.
