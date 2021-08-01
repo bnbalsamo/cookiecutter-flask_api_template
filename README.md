@@ -1,3 +1,12 @@
+# ARCHIVED
+
+This repository is archived. I am no longer actively developing/supporting it.
+
+If you are interested in discussing the contents of this repository feel free to contact me
+via the contact details provided in the "Author" section below.
+
+See my general python project cookiecutter [here](https://github.com/bnbalsamo/cookiecutter-pypackage).
+
 # cookiecutter-flask_api_template
 
 v0.6.0
